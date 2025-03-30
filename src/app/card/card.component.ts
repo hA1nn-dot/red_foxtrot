@@ -1,14 +1,14 @@
 import { Component,Input } from "@angular/core";
-import { CommonModule } from '@angular/common'; // Asegúrate de importar CommonModule
+import { CommonModule } from '@angular/common';
 @Component({
     selector:  'card-component',
     templateUrl: "./card.component.html",
     styleUrls: ['./card.component.scss'],
     imports: [CommonModule],
-    standalone: true,  // Importante para los componentes autónomos
+    standalone: true,
 })
 
 export class CardComponent{
-    @Input() imagenUrl: string = ''; // Definir el input para recibir la URL de la imagen
+    @Input() imagenUrl: string = '';
 
 }
