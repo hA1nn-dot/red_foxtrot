@@ -1,0 +1,57 @@
+<style>
+    .carta{
+        display: flex; /*?*/
+        flex-direction: column; /*?*/
+        width: 300px;
+        min-width: 250px; /*?*/
+        padding: 1.5rem;
+        aspect-ratio: 2/3;
+        /*background-image: url('/assets/foxes.jpg');*/
+        background-size: cover;
+        border-radius: 15px;
+        box-shadow: -1rem 0px 3rem #000;
+        transition: .2s;
+    }
+    .card-list{
+        display: flex;
+        padding: 3rem;
+        overflow-x: scroll;
+    }
+
+    .card-list::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+    }
+    .card-list::-webkit-scrollbar-thumb{
+        background-color: #201c29;
+        box-shadow: 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px -2px rgba(0, 0, 0, .2);
+    }
+
+    .carta:hover{
+        cursor: pointer;
+        transform: translateY(-2rem);
+    }
+
+    .carta:hover~.carta{
+        transform: translateX(150px);
+    }
+    .carta:not(:first-child){
+        margin-left: -150px;
+    }
+</style>
+<div>
+    <h1>Galeria de furras</h1>
+    <section class="card-list">
+        <div style="background-image: url('/assets/furry/img1.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img2.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img3.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img4.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img5.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img6.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img7.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img8.JPG');" class="carta"></div>
+        <div style="background-image: url('/assets/furry/img9.JPG');" class="carta"></div>
+    </section>
+
+</div>
+
