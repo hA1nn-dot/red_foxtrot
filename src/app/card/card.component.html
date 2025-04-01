@@ -14,7 +14,7 @@
     }
     .card-list{
         display: flex;
-        padding: 3rem;
+        padding: 5rem;
         overflow-x: scroll;
     }
 
@@ -33,10 +33,36 @@
     }
 
     .carta:hover~.carta{
-        transform: translateX(150px);
+        transform: translateX(200px);
     }
     .carta:not(:first-child){
-        margin-left: -150px;
+        margin-left: -200px;
+    }
+    .example1{
+        margin: 1rem;
+        padding: 1rem;
+        background: hsl(200 50% 50% );
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 500ms;
+    }
+
+    .example1 > div{
+        overflow: hidden;
+    }
+
+    .example1:hover{
+        grid-template-rows: 1fr;
+    }
+
+    .example2{
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.5em 1em;
+        margin: 1rem;
+        padding: 1rem;
+        background: hsl(161, 92%, 44%);
+        border: 10px solid #000;
     }
 </style>
 <div>
@@ -52,6 +78,18 @@
         <div style="background-image: url('/assets/furry/img8.JPG');" class="carta"></div>
         <div style="background-image: url('/assets/furry/img9.JPG');" class="carta"></div>
     </section>
+
+    <div class="example1">
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor harum et illum ipsa rem quam laborum excepturi. Reprehenderit debitis velit ducimus ratione mollitia, sunt laborum fugit nisi alias. Quod, minima.
+        </div>
+    </div>
+
+    <div class="example2">
+        <div class="btn">   
+            Your name here
+        </div>
+    </div>
 
 </div>
 
